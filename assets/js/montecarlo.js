@@ -11,7 +11,7 @@ function runSimulation() {
         const y = Math.random();
         if (x*x + y*y <= 1) inside++;
 
-        ctx.fillStyle = x*x + y*y <= 1 ? 'red' : 'blue';
+        ctx.fillStyle = x*x + y*y <= 1 ? 'purple' : 'pink';
         ctx.fillRect(x*canvas.width, y*canvas.height, 2, 2);
     }
 

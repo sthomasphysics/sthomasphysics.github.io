@@ -21,7 +21,7 @@
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="#montecarlo" class="icon solid fa-circle"><span>Monte Carlo Sim</span></a>
 						<a href="https://www.linkedin.com/in/sierrathomasphysics/" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
 					</nav>
 
@@ -39,7 +39,7 @@
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
-
+					
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
@@ -90,36 +90,24 @@
 								</section>
 							</article>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
+						<!-- Monte Carlo -->
+							<article id="montecarlo" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h1>Monte Carlo Pi simulation</h1>
+									<p> Select the number of iterations - more iterations mean a more accurate value for pi.</p>
 								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
+								<section>
+									<label for="iterations">Iterations:</label>
+									<input type="number" id="iterations" value="1000">
+									<button onclick="runSimulation()">Run</button>
+									<p id="pi-value">π ≈ </p>
+									<canvas id="canvas" width="400" height="400" style="border:1px solid black"></canvas>
+									<script src="assets/js/montecarlo.js"></script>
+								</section>
 							</article>
-
+							
+					
 					</div>
-
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
@@ -161,4 +149,34 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+
 -->
